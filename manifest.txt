@@ -1,0 +1,2 @@
+Main-Class: com.Gui
+Class-Path: lib/rta.jar
