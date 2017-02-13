@@ -169,7 +169,7 @@ public class Gui extends JFrame {
 		File file = new File(watermark_file);
 		if(file.exists()) {
 			float alpha = 0.5f;			
-			ImageWatermark.markImage( dtFile, watermark_file, alpha, ImageWatermark.MARK_RIGHT_BOTTOM);
+			ImageWatermark.markImage( dtFile, watermark_file, alpha, ImageWatermark.MARK_CENTER);
 			//feedback("Se ha añadido la marca de agua a:" + srFile);
 			imagesProcessed++;
 			double processed = (imagesProcessed / (double) numberOfImages) * 100;

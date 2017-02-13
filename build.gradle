@@ -1,0 +1,18 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "com.github.jengelman.gradle.plugins:shadow:1.2.4"
+  }
+}
+apply plugin: "java"
+apply plugin: 'application'
+apply plugin: "com.github.johnrengelman.shadow"
+mainClassName = "com.Gui"
+
+dependencies {
+    compile files('libs/rt.jar')
+}
